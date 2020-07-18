@@ -3,12 +3,12 @@ const router = express.Router();
 const { getTransactions, addTransactions, removeTransactions } = require('../controllers/transaction_controller')
 
 router
-    .route('/')
+    .route('https://enigmatic-inlet-18390.herokuapp.com/')
     .get(getTransactions)
     .post(addTransactions)
 
 router
-    .route('/:id')
+    .route('https://enigmatic-inlet-18390.herokuapp.com/:id')
     .delete(removeTransactions)
 
 module.exports = router;
